@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Foodyway - Search by Category</title>
+    <!-- fontawwesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- External CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+</head>
+<body>
+    <section class="main">
+        <nav class="navbar">
+            <div class="logo">
+                <span><i class="fas fa-utensils"></i></span>
+                <h2>Foodyway</h2>
+            </div>
+            <div class="links">
+                <a href="category.html" class="pg-link active">Category</a>
+                <a href="index.html"  class="pg-link">Ingredients</a>
+            </div>
+        </nav>
+        <div class="recipe-container">
+            <div class="recipe-header">
+                <h2 class="title">Get Recipes at yours home chef</h2>
+                <blockquote>“A recipe has no soul. You, as the cook, must bring soul to the recipe.”</blockquote>
+                <cite>– Thomas Keller</cite>
+            </div>
+
+             <!-- category list -->
+            <div class="category-recipes">
+                <h3 class="category-title">Search Recipes as per below Categories</h3>
+                <select name="category" id="category">
+                    <option value="">Select Category</option>
+                    <option value="beef">Beef</option>
+                    <option value="chicken">Chicken</option>
+                    <option value="dessert">Dessert</option>
+                    <option value="lamb">Lamb</option>
+                    <option value="pasta">Pasta</option>
+                    <option value="pork">Pork</option>
+                    <option value="seafood">Seafood</option>
+                    <option value="side">Side</option>
+                    <option value="starter">Starter</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="breakfast">Breakfast</option>
+                    <option value="goat">Goat</option>
+                </select>
+            </div>
+
+            <div class="recipes-box">
+                <div class="all-recipes">
+                </div>
+            </div>
+
+            
+
+            <div class="recipe-details">
+                <button type="button" class="recipe-close-btn" id="recipe-close-btn"><i class="fas fa-times"></i></button>
+                <!-- recipe content -->
+                <div class="recipe-details-content">
+                    <h4 class="recipe-title">Recipe Title Name</h4>
+                    <p class="recipe-category">Recipe Ctegory Name</p>
+                    <div class="recipe-instructions">
+                        <h5>Instructions:</h5>
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Praesentium facilis delectus, temporibus cumque fugiat optio maxime dolores sapiente laborum id voluptatibus ea quibusdam libero sit qui voluptatum earum suscipit voluptas.</p>
+                    </div>
+                    <div class="recipe-deatils-img">
+                        <img src="images/recipe-img.png" alt="recipe-img">
+                    </div>
+                    <div class="recipe-link">
+                        <a href="#" target="_blank">See Video</a>
+                    </div>
+                </div>
+            </div>
+
+           
+            <div class="recipes-box">
+                <div class="all-recipes">
+                </div>
+            </div>
+             <div class="recipe-details">
+                <button type="button" class="recipe-close-btn" id="recipe-close-btn"><i class="fas fa-times"></i></button>
+                <!-- recipe content -->
+                <div class="recipe-details-content">
+                </div>
+            </div>
+        </div>
+
+        <!-- top cursor starts-->
+            <div class="container scroll-top d-block">
+            <i class="fas fa-chevron-up " onclick="topFunction()" id="top-btn"></i>
+            </div>
+        <!-- top cursor end -->
+
+    </section>
+
+    <!-- jquery cdn -->
+     <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- external js -->
+    <!-- <script src="js/index.js"></script> -->
+    <script src="js/category.js"></script>
+</body>
+</html>
